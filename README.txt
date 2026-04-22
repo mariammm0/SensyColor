@@ -42,9 +42,11 @@ Voici quelques problèmes que vous pourrez observer :
 
 
 AUTEURS / NOUS CONTACTER :
-Manon DUVAL 21302388
-contact : Manon.Duval.1@etu.sorbonne-universite.fr
 
 Mariam ABD EL MONEIM 21306211
 contact : Mariam.Abd_El_Moneim@etu.sorbonne-universite.fr
 	
+Manon DUVAL 21302388
+contact : Manon.Duval.1@etu.sorbonne-universite.fr
+
+
