@@ -8,24 +8,29 @@ Propose aussi d'autres fonctionnalités, toujours en lien avec les couleurs capt
 
 **CONTENU DE L'ARCHIVE :**
 Dans l'archive que vous venez d'ouvrir, après avoir ouvert le dossier SensyColor, vous trouverez dans l'ordre :
-	- un dossier static contenant :
-		- un dossier css qui contient le fichier css du projet
-		- un dossier images qui contient une image utilisée dans notre projet
-	
-	- un dossier templates contenant tous nos fichiers .html 
-	- un fichier grove_i2c_color_sensor_v2 qui est une copie de la bibliothèque du capteur de couleur
-	- le fichier main python de notre projet
-	- notre base de donnée projet.db
-	- ce fichier texte README
-	- le fichier script_bd python qui contient le code de la création de notre base de donnée
+<ul>
+<li>un dossier static contenant :</li>
+		<ul>
+		<li>un dossier css qui contient le fichier css du projet</li>
+		<li>un dossier images qui contient une image utilisée dans notre projet</li>
+		</ul>
+<li>un dossier templates contenant tous nos fichiers .html</li>
+<li>un fichier grove_i2c_color_sensor_v2 qui est une copie de la bibliothèque du capteur de couleur</li>
+<li>le fichier main python de notre projet</li>
+<li>notre base de donnée projet.db</li>
+<li>ce fichier texte README</li>
+<li>le fichier script_bd python qui contient le code de la création de notre base de donnée</li>
+</ul>
 
 
 **INSTRUCTIONS D'UTILISATION :**
 Pour pouvoir utiliser notre projet, vous devez :
-	-> ouvrir le fichier main dans votre éditeur de code
-	-> l'éxecuter
-	-> dans la console/interpréteur intéractive, cliquez sur le lien qui apparaît
-	-> notre projet s'ouvrira ensuite dans votre navigateur ! 
+<ul>
+	<li>ouvrir le fichier main dans votre éditeur de code</li>
+	<li>l'éxecuter</li>
+	<li>dans la console/interpréteur intéractive, cliquez sur le lien qui apparaît</li>
+	<li>notre projet s'ouvrira ensuite dans votre navigateur ! </li>
+</ul>
 
 
 **QUELQUES CONSEILS POUR LA SUITE :**
@@ -36,8 +41,10 @@ Vous trouverez en haut à gauche un bouton pour revenir au menu, et un bouton en
 
 **BUGS / PROBLEME CONNUS :**
 Voici quelques problèmes que vous pourrez observer :
-	- lors de l'inscription/connexion, le texte 'Pas encore inscrit ?' et 'Déjà inscrit ?' sont mal placés
-	- le capteur ne capte pas les bonnes couleurs ... il ne fonctionne pas bien, mais essayez peut être de le mettre très proche d'une soucre de lumière
+<ul>
+	<li>lors de l'inscription/connexion, le texte 'Pas encore inscrit ?' et 'Déjà inscrit ?' sont mal placés</li>
+	<li>le capteur ne capte pas les bonnes couleurs ... il ne fonctionne pas bien, mais essayez peut être de le mettre très proche d'une soucre de lumière</li>
+</ul>
 
 
 
