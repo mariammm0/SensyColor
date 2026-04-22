@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Nouvelle palette</title>
+        <link rel="stylesheet" href="{{ url_for('static', path= 'css/css_v2.css') }}">
+        <link rel="icon" href="{{ url_for('static', path= 'images/couleur_fond.png') }}">
+    </head>
+
+    <body>
+
+        <p style="text-align:center;">
+            Nouvelle palette!
+        </p>
+
+        <br>
+        <br>
+        <br>
+        
+        <center>
+            <form class="formulaire" name="popup" method="post" action="/nouv_palette" >
+        <div style="margin-top:30px;">
+                <div>
+                    <label for="nom_palette">Nom </label>
+                    <input  name="nom_palette" type="text" pattern="[A-Za-z0-9]+" title="Entrer un nom sans espace svp." required/>
+                </div>
+                <br>
+                <div>
+                    <label for="couleur_palette">Couleurs :  </label>
+                    <select name="couleur_palette" multiple>
+                        {% if historique %}
+                            {% for  couleur in historique %}
+                            <option value="{{ couleur[0] }}" style="background-color: rgb({{couleur[0]}});width:200px;height:20px;">
+                                {{ couleur[0] }}, {{couleur[1]}}
+                          
+                            </option>
+                            {% endfor %}
+                        {% else %}
+                            <p align="center">Auncune couleur captee pur le moment ... </p>
+                        {% endif %}
+                </div> 
+            
+                
+                <br>
+
+                <div >
+                <input value="OK!" type="submit"/>
+                </div>
+           </div> 
+                
+            
+            </form>
+		
+        </center>
+
+
+
+    </body>
+</html>

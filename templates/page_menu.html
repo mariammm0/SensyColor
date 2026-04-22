@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Page menu</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!--icon menu (maison), deconnexion, capteur etc-->	
+    <link rel="stylesheet" href="{{ url_for('static', path= 'css/css_v2.css') }}">
+    <link rel="icon" href="{{ url_for('static', path= 'images/couleur_fond.png') }}">
+
+   </head>
+
+  <body >
+  
+		<h1 class="titre_menu">
+			<div class="gauche"> <span class="material-symbols-outlined" > <a href="page_menu.html" >home</a> </span> </div>
+			<div class="droite"><span class="material-symbols-outlined"> <a href="html_connexion.html" >logout</a></span></div>
+			<div class="centre">SensyColor!</div>
+				
+		</h1>
+
+		<br>
+		<br>
+		<br>
+		
+		<div>
+			<p style="margin-left: 50px; font-size:2em;">Coucou {{pseudo_uti}} ! </p>
+		</div>
+		
+		<br>
+		<br>
+		<br>
+
+
+		<div class="centrer">
+			<div class="bouton" style="text-align:center;">
+						<span class="material-symbols-outlined" style="text-align:center;font-size:5em;"> <a href = "page_capteur.html" >sensors</a></span>
+			</div>		
+		</div>
+					
+		<p style="text-align:center;">
+			Capte une couleur ou melange deux couleurs maintenant!
+		</p>
+		
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		
+		
+			<div classe="gauche" style="margin-left:300px;display:inline-block;">
+				<div class="bouton"><span class="material-symbols-outlined" style="text-align:center;font-size:5em;"><a href="page_palettes.html">palette</a></span></div>
+				
+			</div>
+			
+
+
+			<div class="droite" style="margin-right:300px;display: inline-block;">
+				<div class="bouton"><span class="material-symbols-outlined" style="text-align:center;font-size:5em;"><a href="page_hist.html">history</a></span></div>
+			</div>
+		
+
+		<br>
+		<br>
+
+		<div>
+			<p class="gauche" style="font-size:1.5em;margin-left:270px;display:inline-block;">Mes palettes!</p>
+			<p class="droite" style="font-size:1.5em;margin-right:270px;">Mon historique!</p>
+		</div>
+		
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+	
+
+  </body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title> Page palettes</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!--icon menu (maison), deconnexion, capteur etc-->
+    <link rel="stylesheet" href="{{ url_for('static', path= 'css/css_v2.css') }}">
+    <link rel="icon" href="{{ url_for('static', path= 'images/couleur_fond.png') }}">
+</head>
+
+<body >
+
+	<h1 class="titre_menu">
+		<div class="gauche"> <span class="material-symbols-outlined" > <a href="page_menu.html" >home</a> </span> </div>
+		<div class="droite"><span class="material-symbols-outlined"> <a href="html_connexion.html" >logout</a></span></div>
+		<div class="centre">SensyColor!</div>
+			
+	</h1>
+
+	<br>
+	<br>
+	<br>
+
+	<div class="nouv_palette" style="margin-left:50px;" >
+		
+			<span class="material-symbols-outlined" style="margin-top: 26px;font-size: 3em;" onclick="openPopup()"> add</span>
+			
+	</div>
+
+	
+
+	<script>
+		function openPopup() {
+			var popup_url = "popup.html";
+			var popup_taille = "width=500,height=400,scrollbars=yes";
+
+			window.open(popup_url,"Nouvelle palette", popup_taille);
+		}
+	</script>
+
+	<br>
+	<br>
+	<br>
+
+	<div style="margin-left:50px;">
+		
+			{% for palette in palette_uti %}
+				
+				<p onclick="openPopup_palette(' {{palette}} ')" style="cursor:grab;">{{palette}}</p>
+				<script>
+					function openPopup_palette(nomBouton) {
+						var popup_taille = "width=500,height=400,scrollbars=yes";
+						const popupURL = `/popup_palette?nomBouton=${encodeURIComponent(nomBouton)}`;
+						window.open(popupURL,nomBouton, popup_taille);
+					}
+				</script>
+			{% endfor %}
+		
+	</div>
+
+	
+
+</body>
+
+</html>

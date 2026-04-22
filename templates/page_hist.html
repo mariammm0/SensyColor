@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title> Page historique </title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!--icon menu (maison), deconnexion, capteur etc-->
+    <link rel="stylesheet" href="{{ url_for('static', path= 'css/css_v2.css') }}">
+    <link rel="icon" href="{{ url_for('static', path= 'images/couleur_fond.png') }}">
+</head>
+
+<body >
+
+	<h1 class="titre_menu">
+		<div class="gauche"> <span class="material-symbols-outlined" > <a href="page_menu.html" >home</a> </span> </div>
+		<div class="droite"><span class="material-symbols-outlined"> <a href="html_connexion.html" >logout</a></span></div>
+		<div class="centre">SensyColor!</div>
+			
+	</h1>
+
+	<br>
+	<br>
+	<br>
+
+
+
+
+<p style="margin-left:50px;">Voici votre historique de toutes les couleurs captees !</p>
+
+<br>
+
+<div> 
+	{% if historique %}
+		{% for  couleur in historique %}
+			<div class = "couleur">
+				<img src="{{couleur[2] }}" alt="couleur image">
+				<p>{{couleur[1]}}</p>
+				<p>{{couleur[0]}}</p>
+			</div>
+		{% endfor %}
+	{% else %}
+		<p align="center">Auncune couleur captee pur le moment ... </p>
+	{% endif %}
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+/*couleurs utilisées 
+le fond rose clair : rgba( 255 , 231 , 242 )
+le fond rose foncé des formulaire : rgba( 255 , 200 , 224 )
+bordure blanches : #ffffff
+gris police d'écriture : rgb(145,145,145) 
+*/
+
+
+@font-face {
+  font-family: 'CHERL';
+  src: url('police_cheri/CHERL___.TTF') format('truetype'); 
+}
+
+@font-face {
+  font-family: 'CHERI';
+  src: url('police_cheri/CHERI___.TTF') format('truetype'); 
+  
+}
+
+body{
+  background-color:rgba( 255 , 231 , 242 );
+}
+
+.formulaire {
+  border : thick double  #ffffff;
+  border-radius: 30px;
+  border-width : 10px;
+  width : 400px;
+  height : 220px;
+  background-color:rgba( 255 , 200 , 224 );
+  font-weight: 20;
+  font-family: 'CHERI';
+  color: rgb(145,145,145);
+  font-size:smaller;
+}
+
+a.lien-souligne:link,
+a.lien-souligne:visited {
+  text-decoration: underline;
+  color:blueviolet;
+}
+
+.titre {
+  border : thick double  #ffffff;
+  border-width : 10px;
+  background-color:rgba( 255 , 200 , 224 );
+  height : 50px;
+  border-radius: 30px;
+  font-family: 'CHERL';
+  color: rgb(145,145,145);
+  text-align: center;
+  
+}
+
+.titre_menu {
+  border : thick double  #ffffff;
+  border-width : 10px;
+  background-color:rgba( 255 , 200 , 224 );
+  height : 50px;
+  border-radius: 30px;
+  font-family: 'CHERL';
+  color: rgb(145,145,145); 
+}
+
+.couleur {
+  display: inline-block;
+  margin-right:20px;
+  margin-left:20px;
+}
+
+.gauche{
+  float: left; 
+  margin-left:20px; 
+  margin-top:10px;
+}
+
+.droite{
+  float: right; 
+  margin-right:20px; 
+  margin-top:10px;
+}
+
+.centre {
+  text-align: center;
+  margin-top:5px;
+}
+
+a:link {
+  color : rgb(145,145,145);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(145,145,145);
+}
+
+p{
+  font-family: 'CHERI';
+  color: rgb(145,145,145);
+  font-size:1.5em;
+}
+
+
+.bouton{
+  text-align: center;
+  border : solid  #ffffff;
+  border-width : 5px;
+  background-color:rgba( 255 , 200 , 224 );
+  height : 50px;
+  border-radius: 30px;
+  font-family: 'CHERL';
+  color: rgb(145,145,145);
+  width:100px;
+  height:100px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.nouv_palette {
+  text-align:center;
+  border : solid  #ffffff;
+  border-width : 5px;
+  background-color:rgba( 255 , 200 , 224 );
+  border-radius: 50%;
+  font-family: 'CHERL';
+  color: rgb(145,145,145);
+  width:100px;
+  height:100px;
+}
+
+.nouv_palette:hover{
+	cursor : grab;
+}
+
+.centrer{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+
+.anim{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+
+}
+
+.lettre{
+  transition: 0.4s;
+  transform: translateY(0);
+  cursor:grab;
+  color: rgb(145,145,145);
+  font-family: CHERL;
+  font-size:5em;
+}
+
+.lettre:hover{
+  transform: translateY(-1rem);
+  color: rgba( 255 , 200 , 224 );
+}
+
