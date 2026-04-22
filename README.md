@@ -2,7 +2,7 @@
 
 
 **DESCRIPTION DU PROJET :**
-Site web qui propose à l’utilisateur de pouvoir capter une couleur avec un capteru de couleur et de lui afficher son nom ainsi que son code rgb.
+Site web qui propose à l’utilisateur de pouvoir capter une couleur avec un capteur de couleur et de lui afficher son nom ainsi que son code rgb.
 Propose aussi d'autres fonctionnalités, toujours en lien avec les couleurs captées.
 
 
