@@ -7,7 +7,7 @@ Propose aussi d'autres fonctionnalités, toujours en lien avec les couleurs capt
 
 
 CONTENU DE L'ARCHIVE :
-Dans l'archive que vous venez d'ouvrir, après avoir ouvert le dossier SensyColor_VERSION_FINALE, vous trouverez dans l'ordre :
+Dans l'archive que vous venez d'ouvrir, après avoir ouvert le dossier SensyColor, vous trouverez dans l'ordre :
 	- un dossier static contenant :
 		- un dossier css qui contient le fichier css du projet
 		- un dossier images qui contient une image utilisée dans notre projet
